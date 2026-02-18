@@ -175,6 +175,16 @@ video
 #mail_image
 {
     margin-left: 2%;
+    font-size: 20px;
+}
+
+#links
+{
+    text-align: center;
+     margin-top: 2%;
+     margin-bottom: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 /* Floating Project Sidebar */
