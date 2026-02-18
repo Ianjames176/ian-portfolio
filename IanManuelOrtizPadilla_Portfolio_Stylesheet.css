@@ -308,5 +308,83 @@ video
   border-color: blue;
 }
 
+/* =========================
+   MOBILE ONLY (phones)
+   ========================= */
+@media (max-width: 768px)
+{
+  /* Give the page room */
+  body { padding: 10px; }
+
+  /* Headings/text stop being squeezed by 20% margins */
+  h1, h2, p,
+  #role, #tags, #description, #contributions, #links
+  {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  h1 { font-size: 34px; }
+  h2 { font-size: 22px; }
+  p  { font-size: 18px; }
+
+  /* Navbar becomes stacked + readable */
+  #headerlinks
+  {
+    padding: 12px 0;
+    border-width: 6px;
+  }
+
+  #headerlinks a
+  {
+    display: block;           /* stack buttons */
+    margin: 10px auto;        /* center */
+    width: 85%;               /* nice big tap target */
+    max-width: 420px;
+    font-size: 18px;
+  }
+
+  /* Project cards use full width */
+  #projects
+  {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* Images + videos scale to phone width */
+  img, video, iframe, embed
+  {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Your fixed-size iframes: make them responsive */
+  iframe
+  {
+    width: 100% !important;
+    aspect-ratio: 16 / 9;
+    height: auto !important;
+  }
+
+  /* Sidebar: stop covering the screen */
+  #project-sidebar
+  {
+    position: static;        /* no longer floating */
+    width: auto;
+    margin: 15px 5%;
+  }
+
+  #project-sidebar a
+  {
+    text-align: center;
+  }
+
+  /* Resume PDF embed: fit screen */
+  #resumefile
+  {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
 
 
